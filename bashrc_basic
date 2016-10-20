@@ -1,0 +1,66 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+#-------------------------------------------------------------
+# Some settings
+#-------------------------------------------------------------
+
+alias debug="set -o nounset; set -o xtrace"
+
+ulimit -S -c 0      # Don't want coredumps.
+set -o notify
+set -o ignoreeof
+
+
+# Enable options:
+shopt -s checkhash
+shopt -s checkwinsize
+shopt -s no_empty_cmd_completion
+shopt -s cmdhist
+shopt -s histappend histreedit histverify
+shopt -s extglob       # Necessary for programmable completion.
+
+# Disable options:
+shopt -u mailwarn
+unset MAILCHECK        # Don\'t want my shell to warn me of incoming mail.
+
+#-------------------
+# Personnal Aliases
+#-------------------
+
+alias du='du -kh'    # Makes a more readable output.
+alias df='df -kTh'
+
+alias vi='vim'
+
+#-------------------------------------------------------------
+# The 'ls' family (this assumes you use a recent GNU ls).
+#-------------------------------------------------------------
+# Add colors for filetype and  human-readable sizes by default on 'ls':
+alias ls='ls -h --color=auto'
+
+# The ubiquitous 'll': directories first, with alphanumeric sorting:
+alias ll="ls -alv"
+alias tree='tree -Csu'    
+
+#-------------------------------------------------------------
+# Tailoring 'less'
+#-------------------------------------------------------------
+export LESSCHARSET='UTF-8' #'latin1'
+export TERM=xterm
+
+#-------------------------------------------------------------
+# Tailoring 'grep'
+#-------------------------------------------------------------
+alias grepc='grep --color=auto'
+
+alias tmuxa='tmux attach -t '
