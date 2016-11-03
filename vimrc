@@ -11,7 +11,7 @@ execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
 syntax on
 filetype plugin indent on
 
-set list listchars=trail:
+set list listchars=trail:¶
 
 let python_highlight_all = 1
 
