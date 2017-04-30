@@ -3,9 +3,13 @@ sudo apt install python3-pip
 sudo apt-get install curl
 sudo apt-get install vim
 
-ln -sn $PWD/vimrc ~/.vimrc
-ln -sn $PWD/tmux.conf ~/.tmux.conf
-ln -sn $PWD/tmux_dir ~/.tmux
+chmod u+x $PWD/bin/tmux-session
+ln -sn $PWD/ ~/dotfiles
+ln -sn ~/dotfiles/vimrc ~/.vimrc
+ln -sn ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -sn ~/dotfiles/tmux_dir ~/.tmux
+ln -sn ~/dotfiles/bashrc_basic ~/.bashrc_basic
+echo "\nsource  ~/.bashrc_basic\n" >> ~/.bashrc
 
 sudo apt 
 

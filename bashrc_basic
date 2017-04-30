@@ -65,9 +65,9 @@ alias grepc='grep --color=auto'
 
 alias tmuxa='tmux attach -t '
 
-
 #-------------------------------------------------------------
 # various 
 #-------------------------------------------------------------
 
 alias python=python3
+PATH=~/dotfiles/bin/:$PATH
