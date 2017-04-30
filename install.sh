@@ -14,7 +14,7 @@ git clone --depth=1 https://github.com/scrooloose/syntastic.git
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 
 sudo apt-get install libevent-dev libncurses-dev pkg-config
-https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz -P /tmp/
+wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz -P /tmp/
 cd /tmp
 tar -xvf tmux-2.3.tar.gz
 cd tmux-2.3

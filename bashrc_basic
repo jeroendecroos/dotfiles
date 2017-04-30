@@ -64,3 +64,10 @@ export TERM=xterm
 alias grepc='grep --color=auto'
 
 alias tmuxa='tmux attach -t '
+
+
+#-------------------------------------------------------------
+# various 
+#-------------------------------------------------------------
+
+alias python=python3
