@@ -9,7 +9,7 @@ ln -sn ~/dotfiles/vimrc ~/.vimrc
 ln -sn ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -sn ~/dotfiles/tmux_dir ~/.tmux
 ln -sn ~/dotfiles/bashrc_basic ~/.bashrc_basic
-echo "\nsource  ~/.bashrc_basic\n" >> ~/.bashrc
+echo "source  ~/.bashrc_basic" >> ~/.bashrc
 
 sudo apt 
 
