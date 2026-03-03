@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "allowlist": ["generic"],
+  "default_universe": "generic",
+  "capacity": 10
+}
