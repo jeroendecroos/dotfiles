@@ -1,0 +1,7 @@
+# Local/copilot workspace
+.copilot/
+
+# Squad runtime state (do not commit)
+.squad/agents/*/history*.md
+.squad/log/
+.squad/orchestration-log/
